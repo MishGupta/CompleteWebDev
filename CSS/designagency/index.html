@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsiveness</title>
+  <style>
+    .dev {
+      font-size: 70px;
+      font-style: italic;
+      color: skyblue;
+    }
+
+    .create {
+      font-size: 90px;
+      color: slateblue;
+    }
+
+    .cc {
+      color: palevioletred;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      width: 45%; /* Adjust the width of each section */
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0 0 10px 0; /* Add space below the heading */
+    }
+
+    p {
+      margin: 0 0 20px 0;
+      padding-bottom: 10px;
+      line-height: 1.6; /* Add line height for readability */
+    }
+
+    .img {
+      height: 200px;
+      width: 200px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+
+    .img2 {
+      height: 200px;
+      width: 200px;
+      margin-top: 20px;
+      margin-left: 20px;
+      float: right;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media screen and (max-width: 768px) {
+      .section {
+        width: 100%; /* Sections take full width on mobile */
+        margin-bottom: 40px; /* Add space between sections */
+      }
+
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .img,
+      .img2 {
+        width: 100%;
+        height: auto; /* Images take full width and adjust height */
+        margin: 20px 0; /* Center images with margin on top and bottom */
+      }
+
+      h1 {
+        font-size: 28px; /* Adjust font size for mobile */
+      }
+
+      h3 {
+        font-size: 24px; /* Adjust font size for mobile */
+      }
+
+      p {
+        text-align: center; /* Center-align text on mobile */
+        margin: 0 auto;
+        max-width: 90%; /* Restrict width for readability */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="dev">dev.com</h1>
+  <h1 class="create">We are a <span class="cc">Creative</span><br>Design Agency</h1>
+
+  <div class="content">
+    <div class="section">
+      <img src="image/Designer.png" class="img" alt="Designer Image">
+      <h3>Beauty</h3>
+      <p>Beauty is a multifaceted concept that transcends physical appearance. It encompasses the harmony of form, color,
+        and proportion, as well as the inner qualities of kindness, compassion, and intelligence.</p>
+    </div>
+
+    <div class="section">
+      <h3>Construction</h3>
+      <p>Construction is a general term meaning the art and science of forming objects, systems, or organizations. It
+        comes from the Latin word construction and Old French construction. To 'construct' is a verb: the act of
+        building.</p>
+      <img src="image/pexels-quang-nguyen-vinh-222549-2138126.jpg" class="img2" alt="Construction Image">
+    </div>
+  </div>
+</body>
+
+</html>
