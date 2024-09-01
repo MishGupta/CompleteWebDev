@@ -1,0 +1,85 @@
+<!--The flexbox has a property of flex,if i write flex:2 then it's size will be twice the sixe of all flexboxes
+for using flexbox we need to write display:flex 
+For using css grid we have to write display:grid
+grid-template-columns:1 fr 1fr will divide the page in 2 fractions
+grid-template-rows:100px 200px 200px
+gap: is used for maintaining the same gap between rows and columns
+grid-column: span 2 means combining two rows
+display:flex; this is how it is used ----->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+    .container {
+      color: white;
+      border: 5px solid gold;
+      display: inline-flex;
+      flex-direction: column;
+      
+    }
+    .container > .red{
+        width: 50px;
+      height: 100px;
+    }
+    .container > .blue{
+        width: 50px;
+      height: 100px;
+    }
+    .container > .green{
+        width: 50px;
+      height: 100px;
+    }
+    .container >.indigo{
+        width: 50px;
+      height: 100px;
+    }
+    .container > .purple{
+        width: 50px;
+      height: 100px;
+    }
+    .container > .orange{
+        width: 50px;
+      height: 100px;
+    }
+    .container > .yellow{
+        width: 50px;
+      height: 100px;
+    }
+
+    /*
+Select all the elements that are the direct
+children of the .container class.
+    */
+
+    .red {background-color: #eb4d4b;}
+    .orange {background-color: #f0932b;}
+    .yellow {background-color: #f6e58d;}
+    .green {background-color: #6ab04c;}
+    .blue {background-color: #4834d4;}
+    .indigo {background-color: #30336b;}
+    .purple {background-color: #be2edd;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+  
+</body>
+
+</html>
